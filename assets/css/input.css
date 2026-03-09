@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+  @theme {
+  /* Colors */
+  --color-background: #ffffff;
+  --color-foreground: #5C5C5C;
+  --color-primary-text: #000000;
+  --color-muted-foreground: #5C5C5C;
+  --color-white: #ffffff;
+
+  /* Font */
+  --font-monerret: "Open Sans", sans-serif;
+
+  /* Screens */
+  --breakpoint-xs: 460px;
+}
+
+@utility row {
+  @apply flex flex-row items-center gap-2;
+}
+
+@utility stack {
+  @apply flex flex-col items-center gap-2;
+}
+
+@utility circle {
+  @apply rounded-full;
+}
+
+@utility button {
+  background-color: #c19b76;
+}
+
+@utility center {
+  @apply flex items-center justify-between gap-2;
+}
+img{
+ max: width 100%;
+}
+
+@utility container {
+  @apply mx-auto;
+  padding-inline: 16px;
+} 
